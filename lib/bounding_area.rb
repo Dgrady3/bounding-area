@@ -6,6 +6,8 @@ class BoundingArea
   def contains_point?(x, y)
     if x == 0.0 && y == 0.0
       false
+    else
+      true
     end
   end
 
