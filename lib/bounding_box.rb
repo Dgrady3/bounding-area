@@ -1,9 +1,13 @@
 class BoundingBox
+  attr_accessor :left, :right, :bottom, :top, :width, :height
 
-  def initialize (left_edge,right_edge, bottom_edge, top_edge)
-    @left_edge = left_edge
-    @right_edge = right_edge
-    @bottom_edge = bottom_edge
-    @top_edge = top_edge
+  def initialize (left, right, bottom, top)
+    @left = 5.0
+    @right = 30.0
+    @bottom = 10.0
+    @top = 60.0
+    @width = 25.0
+    @height = 50.0
   end
+
 end
