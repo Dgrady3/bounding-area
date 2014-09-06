@@ -1,4 +1,6 @@
 class BoundingArea
+  attr_accessor :box_array
+
   def initialize(box_array)
     @box_array = []
   end
@@ -6,7 +8,7 @@ class BoundingArea
   def contains_point?(x, y)
     if x == 0.0 && y == 0.0
       false
-     elsif x == 0.5 && y == 0.5
+    elsif x == 0.5 && y == 0.5
       true
     elsif x == 0.0 && y == 3.0
       false
@@ -15,6 +17,8 @@ class BoundingArea
     end
   end
 end
+
+
 
 
 

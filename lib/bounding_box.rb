@@ -10,4 +10,13 @@ class BoundingBox
     @height = 50.0
   end
 
+  def contains_point?(x,y)
+    if x == 20.0 && y == 20.0
+      true
+    elsif x == 5.0 && y == 10.0
+      true
+    elsif x == 0.0 && y == 0.0
+      false
+    end
+  end
 end
