@@ -1,14 +1,22 @@
-require_relative "bounding_box"
-
 class BoundingArea
-  attr_accessor :box_array
+  attr_reader :area
 
-  def initialize(box_array)
-    @box_array = []
+  def initialize(area)
+    @area = area
   end
 
   def contains_point?(x, y)
+    area.each do |box|
+      return true if box.contains_point?(x, y)
+    end
+    false
+  end
 end
+
+
+
+
+
 
 
 
