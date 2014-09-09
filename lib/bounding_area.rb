@@ -1,12 +1,12 @@
 class BoundingArea
-  attr_reader :area
+  attr_reader :boxes
 
-  def initialize(area)
-    @area = area
+  def initialize(boxes)
+    @boxes = boxes
   end
 
   def contains_point?(x, y)
-    area.each do |box|
+    boxes.each do |box|
       return true if box.contains_point?(x, y)
     end
     false
