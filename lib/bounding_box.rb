@@ -9,21 +9,14 @@ class BoundingBox
   end
 
   def right
-     width + left
+    width + left
   end
 
   def top
     height + bottom
   end
 
-
   def contains_point?(x, y)
-     left <= x && x <= right &&  top >= y && y >= bottom
+    left <= x && x <= right &&  top >= y && y >= bottom
   end
-
 end
-
-
-
-
-

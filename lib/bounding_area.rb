@@ -12,14 +12,3 @@ class BoundingArea
     false
   end
 end
-
-
-
-
-
-
-
-
-
-
-
